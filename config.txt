@@ -1,0 +1,16 @@
+{
+	"bind_ip": "192.168.0.3",
+	"routing_table":
+	{
+		"/": "http://localhost:8080",
+		"*.do?*": "http://localhost:8080",
+		"*.do": "http://localhost:8080",
+		"/api/*": "http://localhost:8081",
+		"/swagger*": "http://localhost:8081",
+		"/webjars*": "http://localhost:8081",
+		"/v2/*": "http://localhost:8081",
+		"/csrf": "http://localhost:8081",
+		"/special/*": "file://D:/TEST_ROOT",
+		"*": "//test.co.kr"
+	}
+}
